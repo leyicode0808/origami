@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#FFFFFF">
+
+    <!-- 网址输入区域（横向排列：输入框 + 访问按钮） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <!-- 网址输入框（默认显示B站地址，可修改） -->
+        <EditText
+            android:id="@+id/et_web_url"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:hint="请输入网址（如：https://www.baidu.com）"
+            android:text="https://www.bilibili.com"
+            android:paddingHorizontal="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="16sp" />
+
+        <!-- 访问按钮（右侧紧贴输入框） -->
+        <Button
+            android:id="@+id/btn_load_url"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:text="访问"
+            android:textSize="16sp"
+            android:background="#FF9800"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- 网址提示文本（显示当前加载的地址） -->
+    <TextView
+        android:id="@+id/tv_web_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <!-- WebView（占满中间剩余空间） -->
+    <WebView
+        android:id="@+id/wv_assets_web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 返回按钮（底部通栏） -->
+    <Button
+        android:id="@+id/btnBackToAct011"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="返回"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="#FF9800" />
+
+</LinearLayout>

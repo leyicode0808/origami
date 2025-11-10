@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".Activity_12_02">
+
+    <!-- 1. 打开相机按钮（顶部居中） -->
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="打开相机"
+        android:textSize="18sp"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- 2. 照片显示区域（中间占满剩余空间） -->
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:scaleType="fitCenter"
+        android:background="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenCamera"
+        app:layout_constraintBottom_toTopOf="@id/btnBackToAct12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 3. 返回按钮（底部居中） -->
+    <Button
+        android:id="@+id/btnBackToAct12"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="返回"
+        android:textSize="18sp"
+        android:background="#FF5252"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

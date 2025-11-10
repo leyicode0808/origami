@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- 题目 -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你最擅长什么编程语言"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"/>
+
+    <!-- 选项容器 -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp">
+
+        <!-- 选项1 -->
+        <RadioButton
+            android:id="@+id/rbCpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+
+        <!-- 选项2 -->
+        <RadioButton
+            android:id="@+id/rbPython"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+
+        <!-- 选项3 -->
+        <RadioButton
+            android:id="@+id/rbJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+
+        <!-- 选项4 -->
+        <RadioButton
+            android:id="@+id/rbGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+    </RadioGroup>
+
+    <!-- 提交按钮 -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:id="@+id/btnBackToAct02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回Activity_02"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="#FF9800"
+        android:textColor="#FFFFFF"/>
+
+
+
+
+
+
+</LinearLayout>

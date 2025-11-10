@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/miku"
+    tools:context=".MainActivity">
+
+    <!-- 标题TextView（不变） -->
+    <TextView
+        android:id="@+id/tv_first_word"
+        android:layout_width="359dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="这里是主界面(MAIN)"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <!-- 第一行（1-4）：保留，背景色默认btn_color_1 -->
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:minWidth="48dp"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_first_word" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:minWidth="48dp"
+        android:text="2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_3"
+        app:layout_constraintStart_toEndOf="@+id/btn_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_first_word" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:minWidth="48dp"
+        android:text="3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_4"
+        app:layout_constraintStart_toEndOf="@+id/btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_first_word" />
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/btn_color_1"
+        android:minWidth="48dp"
+        android:text="4"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_first_word" />
+
+    <!-- 第二行（5-8）：保留 -->
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:text="5"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_6"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_1" />
+
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:text="6"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_7"
+        app:layout_constraintStart_toEndOf="@+id/btn_5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_2" />
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:text="7"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_8"
+        app:layout_constraintStart_toEndOf="@+id/btn_6"
+        app:layout_constraintTop_toBottomOf="@+id/btn_3" />
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/btn_color_1"
+        android:text="8"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_7"
+        app:layout_constraintTop_toBottomOf="@+id/btn_4" />
+
+    <!-- 第三行（9-12）：保留 -->
+    <Button
+        android:id="@+id/btn_9"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:text="9"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_10"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_5" />
+
+    <Button
+        android:id="@+id/btn_10"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:text="10"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_11"
+        app:layout_constraintStart_toEndOf="@+id/btn_9"
+        app:layout_constraintTop_toBottomOf="@+id/btn_6" />
+
+    <Button
+        android:id="@+id/btn_11"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:text="11"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_12"
+        app:layout_constraintStart_toEndOf="@+id/btn_10"
+        app:layout_constraintTop_toBottomOf="@+id/btn_7" />
+
+    <Button
+        android:id="@+id/btn_12"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/btn_color_1"
+        android:text="12"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_11"
+        app:layout_constraintTop_toBottomOf="@+id/btn_8" />
+
+    <!-- 第四行（13-16）：保留 -->
+    <Button
+        android:id="@+id/btn_13"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:text="13"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_14"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_9" />
+
+    <Button
+        android:id="@+id/btn_14"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:text="14"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_15"
+        app:layout_constraintStart_toEndOf="@+id/btn_13"
+        app:layout_constraintTop_toBottomOf="@+id/btn_10" />
+
+    <Button
+        android:id="@+id/btn_15"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/btn_color_1"
+        android:text="15"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_16"
+        app:layout_constraintStart_toEndOf="@+id/btn_14"
+        app:layout_constraintTop_toBottomOf="@+id/btn_11" />
+
+    <Button
+        android:id="@+id/btn_16"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/btn_color_1"
+        android:text="16"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:minWidth="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_15"
+        app:layout_constraintTop_toBottomOf="@+id/btn_12" />
+
+    <!-- 退出按钮：修改top约束（依赖btn_16，而非原来的btn_20） -->
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FF4444"
+        android:minWidth="48dp"
+        android:text="退出程序"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_16" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

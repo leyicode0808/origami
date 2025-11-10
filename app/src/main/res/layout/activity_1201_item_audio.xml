@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 根布局：垂直方向，包含上下两块 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 上半块：蓝色半透明背景，承载音频内容 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#CF32E0E0">
+
+        <TextView
+            android:id="@+id/tvAudioName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="示例音频1.mp3"/>
+
+        <TextView
+            android:id="@+id/tvAudioDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginStart="16dp"
+            android:text="03:45"/>
+
+    </LinearLayout>
+
+    <!-- 下半块：全透明背景，仅作为分隔空白（高度8dp，可调整） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>

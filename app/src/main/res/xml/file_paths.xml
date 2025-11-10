@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 配置可访问的路径：外部存储的Pictures目录（与代码中createImageFile的路径一致） -->
+    <external-files-path
+        name="my_images"
+        path="Pictures/" />
+</paths>

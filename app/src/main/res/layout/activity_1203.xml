@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/miku"> <!-- 黑色背景更适配视频播放 -->
+
+    <!-- 视频播放区域（占主要空间） -->
+    <VideoView
+        android:id="@+id/vv_video"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <!-- Play 和 Stop 按钮（横向排列） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:textSize="18sp"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:textSize="18sp"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:layout_marginStart="40dp"/>
+
+    </LinearLayout>
+
+    <!-- 返回上一页按钮 -->
+    <Button
+        android:id="@+id/btnBackToAct12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回上一页"
+        android:textSize="18sp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

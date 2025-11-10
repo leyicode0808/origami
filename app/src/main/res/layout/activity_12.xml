@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/miku"
+    tools:context=".Activity_12">
+
+    <!-- 标题文本：居中顶部 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实验12--多媒体开发实验"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <!-- 第一个按钮：音乐列表的播放（固定大小，与其他功能按钮一致） -->
+
+    <!-- 第二个按钮：手机拍照（与第一个按钮大小一致，垂直排布） -->
+
+    <Button
+        android:id="@+id/btn_music_play"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="84dp"
+        android:background="#E0E0E0"
+        android:text="音乐列表的播放"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <Button
+        android:id="@+id/btn_take_photo"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:text="手机拍照"
+        android:textSize="16sp"
+        android:background="#E0E0E0"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/btn_music_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp" />
+
+    <!-- 第三个按钮：视频播放（与前两个按钮大小一致，垂直排布） -->
+    <Button
+        android:id="@+id/btn_video_play"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:text="视频播放"
+        android:textSize="16sp"
+        android:background="#E0E0E0"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/btn_take_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp" />
+
+    <!-- 底部返回按钮：btnToMain -->
+    <Button
+        android:id="@+id/btnToMain"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="104dp"
+        android:background="#FF5252"
+        android:text="返回"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
