@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"> <!-- 白色背景，避免与PDF内容冲突 -->
+
+    <!-- 页码信息显示（顶部居中） -->
+    <TextView
+        android:id="@+id/tv_page_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="第 1 页 / 共 0 页"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center_horizontal" />
+
+    <!-- PDF 预览核心区域（占满中间剩余空间） -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" /> <!-- 权重1，填充中间所有剩余高度 -->
+
+    <!-- 返回按钮（底部通栏，与之前页面样式统一） -->
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="#FF9800"
+        android:text="返回上一页"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>

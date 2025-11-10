@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/miku"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="请录入选择题"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="选择题序号"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/et_seq"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editext_selector"
+        android:gravity="left|center"
+        android:hint="请输入序号(数字)"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:text="选择题题目"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editext_selector"
+        android:gravity="left|center"
+        android:hint="请输入问题(20字符以内)"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:text="选项A"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_choosea"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editext_selector"
+        android:gravity="left|center"
+        android:hint="请输入选项A(20字符以内)"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:text="选项B"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_chooseb"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editext_selector"
+        android:gravity="left|center"
+        android:hint="请输入选项B(20字符以内)"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:text="选项C"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_choosec"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editext_selector"
+        android:gravity="left|center"
+        android:hint="请输入选项C(20字符以内)"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:text="选项D"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_choosed"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editext_selector"
+        android:gravity="left|center"
+        android:hint="请输入选项D(20字符以内)"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <!-- 新增：水平布局包裹两个按钮，实现并排显示 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- 原有录入按钮（id不变，仅调整margin） -->
+        <Button
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录入"
+            android:layout_marginRight="20dp" /> <!-- 两个按钮间距20dp -->
+
+        <!-- 新增返回按钮：btnBackToAct09，文字"返回" -->
+        <Button
+            android:id="@+id/btnBackToAct09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+    </LinearLayout>
+
+</LinearLayout>

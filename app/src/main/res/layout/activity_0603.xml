@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/miku">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="翻页功能演示"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"/>
+
+    <!-- ViewPager 翻页容器 -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- 底部返回按钮 -->
+    <Button
+        android:id="@+id/btnBackToAct06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="#F44336"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

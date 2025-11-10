@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/miku"
+    android:orientation="vertical">
+
+    <!-- GridView 保持原有配置 -->
+    <GridView
+        android:id="@+id/gv_channel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"/>
+
+    <!-- 最底部返回主页面按钮 -->
+    <Button
+        android:id="@+id/btnBackToAct06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+</LinearLayout>

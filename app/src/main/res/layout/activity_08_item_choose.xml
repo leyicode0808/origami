@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+<TextView
+android:id="@+id/choosetitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginBottom="10dp"
+android:textSize="16sp"
+android:text="你最擅长的编程语言是："/>
+
+    <!-- 为RadioGroup添加id -->
+<RadioGroup
+android:id="@+id/rg_options"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<RadioButton
+    android:id="@+id/choosea"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:text="Java"/>
+
+<RadioButton
+    android:id="@+id/chooseb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:text="c++"/>
+
+<RadioButton
+    android:id="@+id/choosec"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:text="python"/>
+
+<RadioButton
+    android:id="@+id/choosed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:text="rust"/>
+</RadioGroup>
+
+    </LinearLayout>

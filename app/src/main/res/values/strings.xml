@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">origami</string>
+    <!-- 新增chapter 03-->
+    <string name="hello">你好，世界</string>
+</resources>
